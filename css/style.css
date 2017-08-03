@@ -201,6 +201,105 @@
   -o-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
 }
+.contentWrapper .contentTitle .changeRide .changeDropDown {
+  background: #faf6eb;
+  border: 1px solid #cccccc;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 230px;
+  padding: 0 15px;
+  overflow: hidden;
+  z-index: 99;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .changeDropDownTitle {
+  height: 40px;
+  font: 16px/30px 'PMSBold';
+  color: #000;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .changeDropDownTitle.autoHeight {
+  height: auto;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .changeDropDownTitle .refreshIco {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .changeDropDownTitle .refreshIco img {
+  display: inline-block;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .customSuchen {
+  height: 47px;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font: 18px/47px 'PMSBold';
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  background: #1dbc34;
+  float: left;
+  margin-bottom: 15px;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .hr {
+  width: calc(100% + 30px);
+  float: left;
+  margin: 20px -15px 15px -15px;
+  height: 1px;
+  background: #cccccc;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .customSelect {
+  height: 36px;
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .customSelect select {
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  background: #ffffff url("../img/filter-arrow-bottom.png") no-repeat center right 10px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 40px 0 10px;
+  font: 16px 'PM';
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .customSelect select::-ms-expand {
+  display: none;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .customInput {
+  margin-bottom: 15px;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .customInput label {
+  float: left;
+  width: 100%;
+  font: 11px/14px 'PMLight';
+  color: #96948d;
+}
+.contentWrapper .contentTitle .changeRide .changeDropDown .customInput input {
+  width: 100%;
+  height: 40px;
+  font: 14px 'PM';
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 0 10px;
+  font-style: italic;
+}
 .contentWrapper .contentSearchCategory {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
