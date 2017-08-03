@@ -4,6 +4,8 @@
     <title>Teiles Shop</title>
     <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 <style>
@@ -42,51 +44,380 @@
         </div>
         <div class="contentSide">
             <div class="contentSideBar">
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="1">
                     Filter
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="2">
                     Electrik / Generator
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="3">
                     Bremsantage
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="4">
                     Motor
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="5">
                     Karoserie
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="6">
                     Filter
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="7">
                     Electrik / Generator
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="8">
                     Bremsantage
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="9">
                     Motor
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="10">
                     Karoserie
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="11">
                     Filter
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="12">
                     Electrik / Generator
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="13">
                     Bremsantage
                 </div>
-                <div class="contentSideBarItem">
+                <div class="contentSideBarItem contentSideBarItemFirst" data-side-menu="14">
                     Motor
                 </div>
             </div>
             <div class="contentSideContent">
-
+                <div class="treeBar">
+                    <div class="leftTree simpleTree">
+                        <div class="mainTree" data-side-open-menu="1">
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="1_1">
+                                Filter
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="1_2">
+                                Electrik / Generator
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="1_3">
+                                Bremsantage
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="1_4">
+                                Motor
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="1_5">
+                                Karoserie
+                                <div class="moreBlock">+</div>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="4">
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="4_1">
+                                Filter
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="4_2">
+                                Electrik / Generator
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="4_3">
+                                Bremsantage
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="4_4">
+                                Motor
+                                <div class="moreBlock">+</div>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemSecond" data-side-menu="4_5">
+                                Karoserie
+                                <div class="moreBlock">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightTree simpleTree">
+                        <div class="mainTree" data-side-open-menu="1_1">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                1Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                1Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                1Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                1Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                1Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="1_2">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                2Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                2Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                2Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                2Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                2Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="1_3">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="1_4">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="1_5">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="4_1">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="4_2">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="4_3">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="4_4">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                        <div class="mainTree" data-side-open-menu="4_5">
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Filter
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Electrik / Generator
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Bremsantage
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Motor
+                                <span class="moreBlock">10</span>
+                            </div>
+                            <div class="contentSideBarItem contentSideBarItemThird">
+                                Karoserie
+                                <span class="moreBlock">10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBar">
+                    <div class="contentItemLarge contentItem">
+                        <div class="largeItemTitle">
+                            STARTEN SIE HIER
+                        </div>
+                        <div class="largeItemContent">
+                            Выберите интересующую
+                            категорию запчастей чтобы
+                            увидеть необходимые
+                            товары.
+                        </div>
+                    </div>
+                    <div class="contentItemTitle contentItem">
+                        Самые популярные категории запчастей
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                    <div class="contentItem">
+                        <img src="img/motor.png" alt="" title="">
+                        <span>Abgasanlage / Auspuff</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="contentRecommended">

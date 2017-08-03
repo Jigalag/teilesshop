@@ -256,32 +256,233 @@
   padding: 25px 0;
   float: left;
   width: 100%;
+  position: relative;
 }
-.contentWrapper .contentSide .contentSideBar {
-  width: 300px;
-  float: left;
-  padding: 0 20px;
-}
-.contentWrapper .contentSide .contentSideBar .contentSideBarItem {
+.contentWrapper .contentSide .contentSideBarItem {
   height: 34px;
   width: 100%;
   float: left;
   margin-bottom: 3px;
   background: #f8f8f8;
   border: 1px solid #f8f8f8;
-  padding: 0 15px;
+  padding: 0 40px 0 15px;
   font: 16px/32px 'PM';
   color: #545454;
   cursor: pointer;
+  position: relative;
 }
-.contentWrapper .contentSide .contentSideBar .contentSideBarItem:hover,
-.contentWrapper .contentSide .contentSideBar .contentSideBarItem.active {
+.contentWrapper .contentSide .contentSideBarItem:after {
+  content: '\f105';
+  font-family: 'FontAwesome';
+  color: #04c72c;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-505%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.contentWrapper .contentSide .contentSideBarItem.contentSideBarItemSecond:after,
+.contentWrapper .contentSide .contentSideBarItem.contentSideBarItemThird:after {
+  display: none;
+}
+.contentWrapper .contentSide .contentSideBarItem .moreBlock {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-505%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #d1d1d1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 12px;
+  min-width: 15px;
+  padding: 0 2px;
+  text-align: center;
+}
+.contentWrapper .contentSide .contentSideBarItem:hover,
+.contentWrapper .contentSide .contentSideBarItem.active {
   color: #ffffff;
   background: #04c72c;
+}
+.contentWrapper .contentSide .contentSideBarItem:hover:after,
+.contentWrapper .contentSide .contentSideBarItem.active:after {
+  color: #ffffff;
+}
+.contentWrapper .contentSide .contentSideBarItem:hover:before,
+.contentWrapper .contentSide .contentSideBarItem.active:before {
+  content: '';
+  border: 17px solid transparent;
+  position: absolute;
+  left: 100%;
+  border-left: 8px solid #04c72c;
+}
+.contentWrapper .contentSide .contentSideBarItem:hover.contentSideBarItemThird:before,
+.contentWrapper .contentSide .contentSideBarItem.active.contentSideBarItemThird:before {
+  display: none;
+}
+.contentWrapper .contentSide .contentSideBarItem:hover .moreBlock,
+.contentWrapper .contentSide .contentSideBarItem.active .moreBlock {
+  background: #11982d;
+}
+.contentWrapper .contentSide .contentSideBar {
+  width: 300px;
+  float: left;
+  padding: 0 20px;
+  position: relative;
+}
+.contentWrapper .contentSide .contentSideBar:before {
+  position: absolute;
+  width: 40px;
+  height: calc(100% - 6px);
+  border: 2px solid #f7d52f;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  content: '';
+  right: 0;
+  top: 0;
+  z-index: -2;
+  margin-right: 5px;
+}
+.contentWrapper .contentSide .contentSideBar:after {
+  position: absolute;
+  width: 30px;
+  height: calc(100% + 6px);
+  content: '';
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  z-index: -1;
+  margin-right: 15px;
 }
 .contentWrapper .contentSide .contentSideContent {
   width: calc(100% - 300px);
   float: left;
+}
+.contentWrapper .contentSide .contentSideContent .mainTree {
+  float: left;
+  width: 100%;
+}
+.contentWrapper .contentSide .contentSideContent .simpleTree {
+  display: none;
+}
+.contentWrapper .contentSide .contentSideContent .treeBar {
+  float: left;
+  width: 100%;
+  display: none;
+  position: relative;
+  z-index: 2;
+}
+.contentWrapper .contentSide .contentSideContent .treeBar .leftTree {
+  width: calc(100% - 300px);
+  float: left;
+}
+.contentWrapper .contentSide .contentSideContent .treeBar .rightTree {
+  width: 300px;
+  float: left;
+  padding: 0 20px;
+  position: relative;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar {
+  padding: 0 20px;
+  border-collapse: collapse;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem {
+  width: 33.33333%;
+  height: 110px;
+  float: left;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  position: relative;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem img {
+  top: 35px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 70px;
+  max-width: 90%;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem span {
+  font: 16px/18px 'Arial';
+  color: #000;
+  height: 36px;
+  bottom: 4px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background: #ffffff;
+  z-index: 2;
+  overflow: hidden;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem:nth-child(3n + 2) {
+  border-left: 1px solid #e5e5e5;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem:nth-child(3) {
+  border-left: 1px solid #e5e5e5;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem:nth-child(5) {
+  border-top: 1px solid #e5e5e5;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem.contentItemLarge {
+  padding: 0 3px 3px 0;
+  height: 155px;
+  border: none;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem.contentItemLarge .largeItemContent {
+  background: #f4f4f4;
+  float: left;
+  width: 100%;
+  height: calc(100% - 40px);
+  font: 12px/18px 'Arial';
+  color: #000;
+  padding: 15px 25px 15px 15px;
+  overflow: hidden;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem.contentItemLarge .largeItemTitle {
+  background: #f7d52f;
+  float: left;
+  width: 100%;
+  height: 40px;
+  font: 20px/40px 'Arial';
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem.contentItemLarge .largeItemTitle:before {
+  position: absolute;
+  border: 20px solid transparent;
+  border-right: 20px solid #f7d52f;
+  right: 100%;
+  top: 0;
+  content: '';
+}
+.contentWrapper .contentSide .contentSideContent .contentBar .contentItem.contentItemTitle {
+  height: 45px;
+  border-left: 1px solid #e5e5e5;
+  width: 66.66666%;
+  font: 16px/43px 'Arial';
+  color: #000;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
 }
 .contentWrapper .contentRecommended {
   border-top: 1px solid #cccccc;
